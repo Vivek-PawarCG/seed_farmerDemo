@@ -1,0 +1,5 @@
+name: buckets
+path: modules/examples
+parameters:
+  - name: encryption-type
+    value: SSE

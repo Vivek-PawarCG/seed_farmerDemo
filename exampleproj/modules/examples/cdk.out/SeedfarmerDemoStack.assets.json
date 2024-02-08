@@ -1,0 +1,19 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "3e83906ebd44269e6f4b556948bd60784d370b66cf051bc6ebf2413430f1f9f3": {
+      "source": {
+        "path": "SeedfarmerDemoStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "3e83906ebd44269e6f4b556948bd60784d370b66cf051bc6ebf2413430f1f9f3.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

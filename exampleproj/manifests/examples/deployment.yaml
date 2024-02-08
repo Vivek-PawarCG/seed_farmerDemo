@@ -1,0 +1,30 @@
+name: example
+toolchainRegion: us-east-1
+groups:
+  - name: optionals
+    path: manifests/examples/optional-modules.yaml
+targetAccountMappings:
+  - alias: primary
+    accountId: 471112572090
+    default: true
+    regionMappings:
+      - region: us-east-1
+        default: true
+
+
+
+#         parametersRegional:
+#           dockerCredentialsSecret: <secret_name> #remove if not used
+#           permissionsBoundaryName: <policy_name> #remove if not used
+#   - alias: secondary
+#     accountId:
+#       valueFrom:
+#         envVariable: SECONDARY_ACCOUNT
+#     default: true
+#     parametersGlobal:
+#       dockerCredentialsSecret: <secret_name> #remove if not used
+#       permissionsBoundaryName: <policy_name> #remove if not used
+#     regionMappings:
+#       - region: <region name>        
+#       - region: <region name>
+#         default: true
